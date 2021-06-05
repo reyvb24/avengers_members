@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /* It enables a flex context for all its direct children. */
+    justify-content: center; /* horizontal layout */
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 30px;
+    letter-spacing: 1px; /* space between each letter */
+  }
+  
+  
+  #heroes{ /* the paragraph for the movie titles */
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline; /* makes it so that the container is the same size as the text */  
+    /* border-right: 3px solid; will act as the cursor */
+    /* animation: blinkTextCursor 500ms steps(20) infinite; steps(): break down the animation into steps instead of a smooth transition */
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  
+  img {
+    margin-top: 10px;
+    width: 100%; /* % is based on the screen size */
+    height: 500px; 
+    object-fit: cover; /* after setting the height and width, use object-fit: cover to make the gif/img fit the container */
+  }
+
+  #numbertext {
+    color: black;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    position: relative;
+  }
+
+  #prev, #next {
+    cursor: pointer;
+    position: absolute;
+    vertical-align: middle;
+    top:45%;
+    display: table-cell;
+    padding: 0 1vw;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 2.2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  #project-box .slideshow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+#prev {
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#prev:hover, #next:hover {
+  color: rgba(218, 37, 37);
+}
+
+.dot {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border : 5px solid transparent;
+}
+
+.dot:hover {
+    border: 5px solid rgb(209, 145, 49);
+}
+
+.toggle-on {
+    border: 5px solid red;
+    border-color:crimson;
+}
+
+#iron-man {
+    background-image: url("https://cdn0.iconfinder.com/data/icons/superhero-2/256/Ironman-512.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#captain-america {
+    background-image: url("https://i.pinimg.com/originals/d4/94/4c/d4944cf771320331b784da06d36e7506.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#thor {
+    background-image: url("https://p.kindpng.com/picc/s/684-6848036_logo-do-thor-png-transparent-png.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hulk {
+    background-image: url("https://toppng.com/uploads/preview/hulk-hand-png-hulk-fist-11562888547pkx7yeggbj.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hawkeye {
+    background-image: url("https://www.vhv.rs/dpng/d/557-5577751_hawkeye-marvel-logo-png-transparent-png.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#black-widow {
+    background-image: url("https://i.pinimg.com/originals/3a/ee/1b/3aee1b046dea9984904a1481989c9885.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
